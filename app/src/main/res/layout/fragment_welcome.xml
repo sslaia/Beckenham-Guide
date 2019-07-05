@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            style="@style/WelcomeImageStyle"
+            app:srcCompat="@drawable/strange_bromley" />
+
+        <TextView
+            style="@style/WelcomeHeaderStyle"
+            android:text="@string/welcome_header" />
+
+        <TextView
+            style="@style/WelcomeMessageStyle"
+            android:text="@string/welcome_message" />
+
+        <TextView
+            style="@style/AttributionStyle"
+            android:text="@string/attribution" />
+
+    </LinearLayout>
+
+</ScrollView>

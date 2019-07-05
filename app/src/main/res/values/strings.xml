@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Beckenham Tour Guide</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Beckenham Tour Guide</string>
+    <string name="nav_header_subtitle">Not for ourselves alone</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_about">About</string>
+
+    <string name="menu_home">Welcome to Beckenham</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_events">Events</string>
+    <string name="menu_celebrities">Famous Residents</string>
+    <string name="menu_history">Historical sites</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_feedback">Feedback</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_accommodation">Accommodation</string>
+    <string name="menu_entertainment">Entertainment</string>
+    <string name="menu_transport">Transport</string>
+    <string name="menu_restaurant">Restaurants and Cafes</string>
+
+    <string name="name">Name</string>
+    <string name="place">Place</string>
+    <string name="description">Description</string>
+    <string name="category">Category</string>
+
+    <string name="welcome_header">Welcome to \nBeckenham Tour Guide App!</string>
+    <string name="welcome_message">Since its early development from a small village to town Beckenham
+        has its motto NON NOBIS SOLUM written on its coat of arms. In English: NOT FOR OURSELVES ALONE.\n\n
+        And Beckenham has always been true to this motto. Unfortunately less so in 2019.
+        The Council where Beckenham belongs, does exactly the opposite. As it stands,
+        it is the only council in London (!) which has refused to take in 50 children refugees.\n\n
+        Come and explore wonderful things in and around Beckenham.</string>
+
+    <string name="profile_header_text">Sirus Laia</string>
+    <string name="profile_body_text">Quite late to learn coding, but I have been always interested in IT.\n\n
+        So when I hadn\'t started my official Android programming course, I was running a project
+        I called the Nias Keyboard Project. Basically coding for Android before learning how to code :)\n\n
+        I have a few apps ideas so I\'m looking forward to finishing the course and starting real work!\n\n
+        My Background\n\n
+        I was born in Nias Island, the biggest of all islands off West Sumatra, but I left the island,
+        when I started my high school years in Sibolga, Sumatra. Then after finishing
+        my philosophical study in Pematang Siantar, I went to Münster, Germany,
+        where I studied and worked for almost 11 years.\n\n
+        I came back to the island just 3 weeks before 2004 tsunami hit Indian ocean, including Nias Island,
+        and 3 months before the earthquake finally devastated the island. As programme manager and
+        deputy director I got the task of organising the relief, rehabilitation and reconstruction work,
+        while building up a humanitarian and social organisation called Caritas Sibolga.\n\n
+        After 4 years work in Caritas Sibolga I started a new job in administration in Sibolga.
+        But Padang earthquake of 30 Sept 2009 took me back to NGO world. I moved to Padang, West Sumatera,
+        to be programme manager of the Caritas joint emergency response for Karina KWI (Caritas Indonesia).\n\n
+        In April 2010 I made myself free for a new way of life and then moved to Europe
+        (or came back to :) ) as I had always wanted to call Europe my home.</string>
+
+    <string name="attribution">Photo above: the strange statue without name outside the St Mark\'s Square, Bromley.
+        All photographs by creator of the app. Other images are either from respective source (bromley.gov.uk,
+        wikipedia.org where mentioned or organisers of events) or pixabay.com.</string>
+
+</resources>
