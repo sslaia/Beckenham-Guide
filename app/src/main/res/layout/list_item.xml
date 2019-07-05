@@ -7,21 +7,14 @@
     app:cardCornerRadius="4dp">
 
     <LinearLayout
-        style="@style/ListLinearLayout1Style"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="4dp" >
+        style="@style/ListLinearLayout1Style" >
 
         <ImageView
             android:id="@+id/image"
             style="@style/ListImageStyle" />
 
         <LinearLayout
-            style="@style/ListLinearLayout2Style"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:orientation="vertical" >
+            style="@style/ListLinearLayout2Style" >
 
             <TextView
                 android:id="@+id/name"
