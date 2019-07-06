@@ -25,13 +25,14 @@
     <string name="description">Description</string>
     <string name="category">Category</string>
 
+    <!-- Images content description -->
+    <string name="welcome_image">Welcome image</string>
+    <string name="profile_image">Profile image</string>
+    <string name="list_image">List image</string>
+    <string name="gallery_image">Photo gallery</string>
+
     <string name="welcome_header">Welcome to \nBeckenham Tour Guide App!</string>
-    <string name="welcome_message">Since its early development from a small village to town Beckenham
-        has its motto NON NOBIS SOLUM written on its coat of arms. In English: NOT FOR OURSELVES ALONE.\n\n
-        And Beckenham has always been true to this motto. Unfortunately less so in 2019.
-        The Council where Beckenham belongs, does exactly the opposite. As it stands,
-        it is the only council in London (!) which has refused to take in 50 children refugees.\n\n
-        Come and explore wonderful things in and around Beckenham.</string>
+    <string name="welcome_message">Since its early development from a small village to town Beckenham has its motto <b>NON NOBIS SOLUM</b> written on its coat of arms. In English: <b>NOT FOR OURSELVES ALONE</b>.\n\nAnd Beckenham has always been <b>true</b> to this motto.\n\nUnfortunately less so in 2019. The Council where Beckenham belongs, does exactly <b>the opposite</b>. As it stands, it is <b>the only council in London</b> (!) which has <b>refused to take in 50 children refugees</b>.</string>
 
     <string name="profile_header_text">Sirus Laia</string>
     <string name="profile_body_text">Quite late to learn coding, but I have been always interested in IT.\n\n
@@ -56,5 +57,350 @@
     <string name="attribution">Photo above: the strange statue without name outside the St Mark\'s Square, Bromley.
         All photographs by creator of the app. Other images are either from respective source (bromley.gov.uk,
         wikipedia.org where mentioned or organisers of events) or pixabay.com.</string>
+
+    <!-- The following are the tour guide data in ArrayList GuideData -->
+    <string name="beckenham_park">Address: 10 Copers Cope Rd, Beckenham BR3 1NB\nPhone: 020 8663 9199\n\nBeckenham Park Hotel is set in the heart of Beckenham Town Centre on the glories tree lined historical copers cope road. The building has retained many of its characters since when it was originally built in late 18th century. Jones family has established this unique privately-owned hotel some 50 years ago. The hotel almost last one year has spent upgrading and reinstating its facilities to provide warm and welcoming family atmosphere for clients to relax and enjoy their stay.\n\nThe current owners have spent a lot of money and a lot of hard work to provide you exquisite relaxing atmosphere and keeping this period buildings original features.</string>
+
+    <string name="bromley_court">Address: Bromley Hill, Bromley BR1 4JD\n" +
+                "Phone: 020 8461 8600\n" +
+                "\n" +
+                "Ideally located, with a bird\'s eye view of London and the Kent countryside, " +
+                "The Bromley Court is the largest and most established hotel in the area.\n" +
+                "\n" +
+                "We are proud of our rich 200 year history and years of experience offering " +
+                "comfortable surroundings, superb food and personal service to all our guests " +
+                "whether they are holiday makers, business travellers or are visiting us for a special occasion.\n" +
+                "\n" +
+                "A warm welcome awaits you in elegant surroundings, including two acres " +
+                "of beautifully landscaped gardens.\n" +
+                "Begin your stay with a relaxing drink in our Garden Bar and then enjoy our " +
+                "hospitality with a light snack or dinner in our orangery-style Garden Restaurant.\n</string>
+
+    <string name="innkeepers">Address: Toby Carvery, Eden Park, 422 Upper Elmers End Rd, Beckenham BR3 3HQ\n" +
+                "Phone: 020 8650 2233\n" +
+                "\n" +
+                "Comfort, character and the warmest of welcomes.\n" +
+                "Innkeeper\'s Lodge offer great hotels for those looking for a truly individual stay. " +
+                "We have outstanding locations, characterful rooms and contemporary finishes.\n" +
+                "\n" +
+                "All of our sites are paired with a popular pub or award-winning restaurant, " +
+                "so you can dine, relax, and enjoy the finest hospitality. Choose from convenient " +
+                "Birmingham locations, to cosy country pubs in the Peak District. " +
+                "But wherever you\'re travelling to, you\'ll find many of our hotels are situated in outstanding locations.\n" +
+                "\n" +
+                "All creature comforts and modern facilities such as comfortable Hypnos beds, " +
+                "Freeview TVs, free Wi-Fi and parking, an en suite bathroom with " +
+                "powerful shower and a continental breakfast are included in your price.</string>
+
+    <string name="darwin">Obviously the most famous person in this area." +
+                "He was born in 1809 in West Midlands, but spent most of his life at Down House, " +
+                "20 min auto journey from Beckenham. He is most famous for being a biologist and " +
+                "scientist, developing the theory of natural selection, which he explored in " +
+                "his groundbreaking book \'On the Origin of Species\'. It was here at Down House " +
+                "that he wrote that famous book and built his greenhouse " +
+                "where he conducted scientific experiments." +
+                "\n" +
+                "Down House is a beautiful place to visit, with lovely gardens and lots of rooms " +
+                "to explore – you can even stand in the very same study " +
+                "where Darwin wrote \'On the Origin of Species\'.</string>
+
+    <string name="bowie">He was in Brixton but lived in Plaistow Grove, Bromley, for most of his childhood. " +
+                "About 11 min auto journey from Beckenham. He went to Bromley Technical High School " +
+                "in 1958, which we all now know as Ravens Wood. " +
+                "Bowie\'s musical career was centred around Bromley and Beckenham, " +
+                "and he played gigs at various places including Chislehurst Caves, " +
+                "the Three Tuns pub in Beckenham (now Zizzi) and the Bromley Court Hotel." +
+                "\n" +
+                "BTW there is an appeal going on to save a piece of Bowie history, i.e. the Bowie Bandstand Appeal. " +
+                "It aims to restore the bandstand where Bowie played at Croydon Road recreation ground.</string>
+
+    <string name="blyton">Children all over the world loved stories written by Enid Blyton. " +
+                "She lived in Shortlands between 1926 and 1929, and there is now a blue plaque " +
+                "located at 83 Shortlands Road in memory of her. That\'s only 5 minutes journey " +
+                "from Beckenham High Street. Among her world bestselling books: The Secret Seven, " +
+                "The Famous Five and The Faraway Tree.</string>
+
+    <string name="wells">If you have read the science fiction book The Time Machine and The War of the Worlds, " +
+                "which likely you have, then H.G. Wells is familiar author name to you. " +
+                "He was born in the town nearby Bromley (10 minutes journey from Beckenham) " +
+                "on the 21st September 1866. He was nominated for the Nobel Prize in Literature four times.\n" +
+                "\n" +
+                "In front of the now Primark you can see a blue plaque to commemorate his birthplace.</string>
+
+    <string name="odeon">Address: High St, Beckenham BR3 1DY\n" +
+                "Phone: 0333 014 4501\n" +
+                "Odeon, sometimes stylised as ODEON, is a cinema brand name operating in the United Kingdom, " +
+                "Ireland and Norway, which along with UCI Cinemas and Nordic Cinema Group is part of " +
+                "the Odeon Cinemas Group subsidiary of AMC Theatres. It uses the famous name of " +
+                "the Odeon cinema circuit first introduced in Britain in 1930.\n" +
+                "\n" +
+                "The first Odeon cinema was opened by Oscar Deutsch in 1928, in Brierley Hill, " +
+                "Staffordshire (now West Midlands), although initially called \"Picture House\". " +
+                "The first cinema to use the Odeon brand name was Deutsch\'s cinema at Perry Barr, " +
+                "Birmingham in 1930. Ten years later Odeon was part of the Rank Organisation " +
+                "who continued their ownership of the circuit for a further sixty years. " +
+                "Through a number of sales and acquisitions in the early 2000s the company was " +
+                "purchased by Terra Firma, which merged Odeon and UCI Cinemas to form " +
+                "Odeon UCI Cinemas Group. Most UCI cinemas then took the Odeon brand name in 2006. " +
+                "Terra Firma/UCI sold the company to AMC Theatres in November 2016. Ironically, " +
+                "UCI was originally formed through the merger of AMC UK and " +
+                "Cinema International Corporation in 1989.\n" +
+                "\n" +
+                "As of 2016, Odeon is the largest cinema chain in the United Kingdom by market share " +
+                "(although the Irish cinemas were also included within this figure).</string>
+    <string name="the_spa">Address: 4 Bromley Road, Beckenham, BR3 5JE\n" +
+                "\n" +
+                "We are a social enterprise on a mission to improve wellbeing. " +
+                "We help everyone get more out of life by moving more, eating better, feeling positive " +
+                "and making new friends. We understand what it takes to make a positive impact on everyday " +
+                "wellbeing and we are here to make it simple, easy and more fun for everyone in our " +
+                "neighbourhoods to live longer, healthier and happier lives.\n" +
+                "\n" +
+                "From children to grandparents and everyone in between, we help people get to where " +
+                "they want to be, whatever their starting point. With sports, leisure, golf and health " +
+                "offerings, our range of wellbeing services ensures we have something for everyone.</string>
+    <string name="gambado">Address: Natwest Sports Ground, Copers Cope Rd, Beckenham BR3 1NZ\n" +
+                "Phone: 0330 555 1415\n" +
+                "Gambado offers children the chance to play, learn, explore and party in some of " +
+                "the most exciting indoor play venues in the world.\n" +
+                "\n" +
+                "Our venues have been superbly designed to cater for all ages and are packed full " +
+                "of variety and innovation to ensure that no two trips are the same!\n" +
+                "\n" +
+                "Bring the children to Gambado and let them play in a healthy, fun and above all " +
+                "safe environment whilst learning some of the most valuable development skills at the same time!</string>
+    <string name="picturehouse">Address: 242 High St, Bromley BR1 1PQ\n" +
+                "0871 902 5747\n" +
+                "\n" +
+                "Picturehouse Cinemas is a network of cinemas in the United Kingdom, operated by " +
+                "Picturehouse Cinemas Ltd and owned by Cineworld. The company runs its own film " +
+                "distribution arm, Picturehouse Entertainment, which has released acclaimed films " +
+                "such as David Lowery\'s A Ghost Story, Sally Potter\'s The Party and " +
+                "Francis Lee\'s God\'s Own Country, Custody, Capernaum and The Wife. A previous iteration " +
+                "of this distribution arm, which focused largely on alternative content, was sold in 2017 " +
+                "to Howard Panter and Rosemary Squire and rebranded as Trafalgar Releasing.\n" +
+                "\n" +
+                "The first cinema in the chain, Phoenix Picturehouse, opened in Oxford in 1989, " +
+                "but many of the others operated independently before then: the Duke of York\'s " +
+                "Picture House in Brighton, for example, opened in 1910 and is Britain\'s longest continually operating cinema.</string>
+
+    <string name="the_glades">Address: High St, Bromley BR1 1DN\n" +
+                "\n" +
+                "The Glades is a posh shopping centre in Bromley, a 15 minutes drive from Beckenham. " +
+                "It has a total of 135 stores trading from a combined floorspace of 464,000 sq ft. " +
+                "Opened as The Glades on Tuesday 22 October 1991, the centre is currently jointly " +
+                "owned by Alaska Permanent Fund and the London Borough of Bromley.</string>
+
+    <string name="screen_green">Date: 05 July 2019 - 14 July 2019\n" +
+                "Location: Beckenham Green\n" +
+                "\n" +
+                "Beckenham Together host this years Screen on the Green.\n" +
+                "\n" +
+                "Beckenham Green open space Screen on the Green is set to entertain and engage the Beckenham community for two weeks.\n" +
+                "\n" +
+                "During the day, you will be able to soak up the sunshine while live games " +
+		        "from the Wimbledon Championships are projected on a huge screen.\n" +
+                "\n" +
+                "Every Friday and Saturday evening selected movies will be screened - " +
+		        "turning these summer evenings into memorable nights as friends and families gather under the stars.\n" +
+                "\n" +
+                "Screen on the Green will also feature food and drink stalls including a PIMM\'S bar. Free entry for all!\n" +
+                "\n" +
+                "For more information: https://www.facebook.com/events/328772838034519/\n" +
+                "\n" +
+                "Event organiser: Beckenham Together\n" +
+                "\n" +
+                "Web: https://beckenhamtogether.co.uk/</string>
+
+    <string name="the_huskies">Date: 5 July 2019\n" +
+                "Location: Orpington Liberal Club, 7 Station Rd, Orpington BR6 0RZ\n" +
+                "Time: 20:00 - 23:00\n" +
+                "Cost: £3\n" +
+                "Live music with open mic slots\n" +
+                "\n" +
+                "An evening of music with popular local Bluegrass and Americana virtuoso guitarist " +
+		        "John Edwards; and impresario and bass-player David Silk.\n" +
+                "\n" +
+                "Guest performers very welcome. (A donation to St Christopher\'s " +
+		        "Hospice will be made from the proceeds.)\n" +
+                "\n" +
+                "For  more information contact Dave Silk on 01689 875683\n</string>
+
+    <string name="music_in_garden">Date: 07 July 2019\n" +
+                "Location: Garden View, 6 Edward Road, Biggin Hill, TN16 3HL\n" +
+                "Time: 14:00 - 17:00\n" +
+                "Cost: £5\n" +
+                "Enjoy an afternoon of music in this beautiful award winning garden in Biggin Hill, in aid of the NSPCC.\n" +
+                "\n" +
+                "People at a garden party with music\n" +
+                "Entertainment from the Bromley Philharmonic Choir, Bromley Male Voices, " +
+		        "Frank McConell, Vocal Eclipse and crooner Pete Sinclair.\n" +
+                "\n" +
+                "There will also be a small art exhibition, cards and gifts, pot luck and light refreshments available.\n" +
+                "\n" +
+                "Event organiser: Freda Davis\n" +
+                "Telephone: 07958 534074\n" +
+                "Web: www.fredasgarden.co.uk</string>
+
+    <string name="churchill">Date: 11 July 2019\n" +
+                "Location: Garden View, 6 Edward Road, Biggin Hill, TN16 3HL\n" +
+                "Time: 14:00 - 17:00\n" +
+                "Cost: £5\n" +
+                "Enjoy an afternoon of music in this beautiful award winning garden in Biggin Hill, in aid of the NSPCC.\n" +
+                "\n" +
+                "People at a garden party with music Entertainment from the Bromley Philharmonic Choir, " +
+		        "Bromley Male Voices, Frank McConell, Vocal Eclipse and crooner Pete Sinclair.\n" +
+                "\n" +
+                "There will also be a small art exhibition, cards and gifts, pot luck and light refreshments available.\n" +
+                "\n" +
+                "Event organiser: Freda Davis\n" +
+                "Telephone: 07958 534074\n" +
+                "Web: www.fredasgarden.co.uk</string>
+
+    <string name="bec_rec_rock">Date: 13 July 2019\n" +
+                "Location: Croydon Road Recreation Ground, Beckenham, Kent BR3 3NR\n" +
+                "Time: 13:00 - 20:00\n" +
+                "Cost: Free\n" +
+                "Fully inclusive family fun day.\n" +
+                "\n" +
+                "Entertainment, attractions, live music, food, drinks and fun. \n" +
+                "\n" +
+                "Early entry for people with disabilities (12 noon), toilets with hoists, " +
+		        "adult changing benches, showers and attendants, quite and sensory zones, " +
+		        "sunflower lanyards for \"hidden disabilities\", online Herbert Protocol and social stories, " +
+		        "parking which can be pre-booked, good signage, buddies to provide " +
+		        "assistance and medical support on site.\n" +
+                "\n" +
+                "We want everyone to be able to enjoy our events so if there is anything " +
+		        "preventing you from joining us, please contact us and we will see if we can help.\n" +
+                "\n" +
+                "Website: www.becrecrocks.com\n" +
+                "Telephone: 01322 291151</string>
+
+    <string name="magic_musical">Date: 20 July 2019\n" +
+                "Location: Church House Gardens, Bromley BR1 1HA\n" +
+                "Time: 19:30\n" +
+                "Cost: From £25\n" +
+                "From West End to Broadway, all your favourite hits in one sensational night " +
+		        "featuring orchestra, choir and singers from the West End stage.\n" +
+                "\n" +
+                "Enjoy the splendor of the outdoors in this award-winning setting by " +
+		        "the lake with a night showcasing the Magic of the Musicals.\n" +
+                "\n" +
+                "Accessible seating available.\n" +
+                "\n" +
+                "For more information and to book tickets visit www.torchentertainment.co.uk\n" +
+                "\n" +
+                "Event organiser: Torch Entertainment\n</string>
+
+
+    <string name="bowie_bandstand">The bandstand in Croydon Road Recreation Ground, Beckenham, " +
+                "is Edwardian, built by McCallum and Hope Ltd of Glasgow.\n" +
+                "\n" +
+                "It is Locally Listed and has been the venue for many musical performances, including " +
+                "one of Beckenham\'s most famous residents, David Bowie who played on the bandstand " +
+                "at the Beckenham Free Festival at the park in 1969 which was organised by himself and " +
+                "The Beckenham Arts Laboratory. Recent research has identified that this is the last " +
+                "marked McCallum and Hope bandstand in the country, and is therefore of high architectural value.\n" +
+                "\n" +
+                "The bandstand is much-loved by local residents and is a showcase for Edwardian " +
+                "craftsmanship and design (Source: beckenhamheritagegroup.co.uk)</string>
+
+    <string name="crofton_roman_villa">Crofton Roman Villa is the only villa open to the public in Greater London. " +
+                "It was inhabited from about AD 140 to 400 and was the centre of a large farming estate. " +
+                "Today you can see the remains of 10 rooms protected inside a public viewing building. " +
+                "Remains include tiled (tessellated) floors and the under-floor heating system (hypocaust).\n" +
+                "\n" +
+                "The Villa is managed on behalf of the London Borough of Bromley by " +
+                "Kent Archaeological Rescue Unit (Source: bromley.gov.uk)</string>
+
+    <string name="biggin_hill_museum">The museum showcases the remarkable stories of men and women caught up " +
+                "in the Battle of Britain through the lens of four themes – Early Years, Station Life, " +
+                "Community Life and Remembering. A wealth of objects including letters, photographs, " +
+                "paintings, uniforms and flying jackets, a Browning machine gun, \'scramble\' " +
+                "and \'victory\' bells, brings these personal stories to life.\n" +
+                "\n" +
+                "The museum is independently governed by the Biggin Hill Memorial Museum Trust, " +
+                "and managed by a team of staff and volunteers (Source: bromley.gov.uk)</string>
+
+    <string name="crystal_palace">The Crystal Palace was a cast-iron and plate-glass structure originally " +
+                "built in Hyde Park, London, to house the Great Exhibition of 1851. The exhibition " +
+                "took place from 1 May until 15 October 1851, and more than 14,000 exhibitors from " +
+                "around the world gathered in its 990,000 square feet (92,000 m2) exhibition space " +
+                "to display examples of technology developed in the Industrial Revolution. " +
+                "Designed by Joseph Paxton, the Great Exhibition building was 1,851 feet (564 m) long, " +
+                "with an interior height of 128 feet (39 m). It was three times the size of St Paul\'s Cathedral.\n" +
+                "\n" +
+                "The introduction of the sheet glass method into Britain by Chance Brothers in 1832 " +
+                "made possible the production of large sheets of cheap but strong glass, and its use " +
+                "in the Crystal Palace created a structure with the greatest area of glass ever seen " +
+                "in a building. It astonished visitors with its clear walls and ceilings that " +
+                "did not require interior lights.\n" +
+                "\n" +
+                "It has been suggested that the name of the building resulted from a piece penned by " +
+                "the playwright Douglas Jerrold, who in July 1850 wrote in the satirical magazine Punch " +
+                "about the forthcoming Great Exhibition, referring to a \"palace of very crystal\".\n" +
+                "\n" +
+                "After the exhibition, the Palace was relocated to an area of South London known as " +
+                "Penge Common. It was rebuilt at the top of Penge Peak next to Sydenham Hill, " +
+                "an affluent suburb of large villas. It stood there from June 1854 until its destruction " +
+                "by fire in November 1936. The nearby residential area was renamed Crystal Palace " +
+                "after the landmark. This included the Crystal Palace Park that surrounds the site, " +
+                "home of the Crystal Palace National Sports Centre, which had previously been " +
+                "a football stadium that hosted the FA Cup Final between 1895 and 1914. " +
+                "Crystal Palace F.C. were founded at the site in 1905 and played at the Cup Final " +
+                "venue in their early years. The park still contains Benjamin Waterhouse Hawkins\'s " +
+                "Crystal Palace Dinosaurs which date back to 1854. (Source: Wikipedia)</string>
+
+    <string name="st_georges">Beckenham as a settlement dates from 862. There is rumour of an " +
+                "early wooden church but it is generally accepted that there was a church in Beckenham " +
+                "from before 1070. The earliest record is in the Textus Roffensis (1115 – 1125), " +
+                "which is held at Rochester Cathedral. There is no information about this church.\n" +
+                "\n" +
+                "Building of the medieval church began in 1340. Initially the church comprised of " +
+                "a chancel and nave with a square tower. There are registers of baptisms, marriages, " +
+                "and burials from 1538, many of which are held at the county records office. " +
+                "(Source: St. George\'s Parish)</string>
+
+    <string name="pierluigi">Beautiful and Authentic Italian Food\n" +
+                "\n" +
+                "Address: 86-90 High St, Beckenham BR3 1ED\n" +
+                "Phone: 020 8663 3387\n" +
+                "\n" +
+                "Since 1994, Pierluigi\'s has been serving the finest Italian cuisine from the heart " +
+                "of Beckenham. Born out of an Italian families love of authentic home cooking, " +
+                "the restaurant has evolved to offer exquisite, freshly prepared dishes inspired " +
+                "by traditional and modern Italy.</string>
+    <string name="agora">Address: 66 High St, Beckenham BR3 1ED\n" +
+                "Phone: 020 8650 0511\n" +
+                "Mediterranean restauran in the heart of Beckenham\n" +
+                "\n" +
+                "Situated in the heart of Beckenham High Street, we bring good, Greek and Mediterranean " +
+                "food to your table, with a relaxed twist on sophisticated dining.  " +
+                "We offer a tranquil dining experience all year around and the perfect setting " +
+                "for any occasion. Enjoy our all menus and premium cocktails at your leisure whether " +
+                "you are a local resident, work close by or are simply visiting the area." +
+                "Experience the best of Greek and Mediterranean food in a beautiful setting.</string>
+    <string name="bocca">Modern Italian Restaurant and Cocktail Bar\n" +
+                "\n" +
+                "Address: 72-74 High St, Beckenham BR3 1ED\n" +
+                "Phone: 020 8658 9990\n" +
+                "\n" +
+                "Set in the heart of Beckenham, Bocca Social offers an Italian inspired seasonal " +
+                "menu and expertly crafted cocktails.\n" +
+                "\n" +
+                "Our starters \'Cichetti\' are designed for sharing and our main courses are a combination " +
+                "of traditional Italian cooking mixed in with a few favourites of ours. " +
+                "Paired with our carefully sourced wines, signature cocktails and expansive spirit list " +
+                "you will always find something to make your \'Bocca\' water</string>
+    <string name="delinene">Address: 52-54 High St, Beckenham BR3 1AY\n" +
+                "Phone: 020 8289 7307\n" +
+                "\n" +
+                "The only child friendly Café and Bistro in Beckenham with dedicated kids play area. " +
+                "It is the ultimate dream come true for parents and children. Uniquely decorated " +
+                "with hand crafted pieces that add to the family friendly atmosphere of our café. " +
+                "pen 8am to 8pm, now you don\'t have to worry about breakfast, lunch and dinner. " +
+                "Looking to have a party, we also offer private space for hire and " +
+                "a beautiful garden in summer. Come in, take a seat and enjoy!\n</string>
 
 </resources>

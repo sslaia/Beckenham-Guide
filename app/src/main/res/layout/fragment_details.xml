@@ -14,6 +14,7 @@
         <ImageView
             android:id="@+id/details_image"
             style="@style/DetailImageStyle"
+            android:contentDescription="@string/list_image"
             app:srcCompat="@drawable/beckenham" />
 
         <TextView

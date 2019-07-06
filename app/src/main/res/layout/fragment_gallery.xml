@@ -4,182 +4,134 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
-        style="@style/GalleryLinearLayout2Style" >
+    <LinearLayout style="@style/GalleryLinearLayoutStyle">
 
         <android.support.v7.widget.CardView
             style="@style/GalleryCardViewStyle"
-            app:cardElevation="4dp"
-            app:cardCornerRadius="4dp">
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp">
 
-            <LinearLayout
-                style="@style/GalleryLinearLayoutStyle">
-
-                <ImageView
-                    style="@style/GalleryImageStyle"
-                    app:srcCompat="@drawable/strange_bromley" />
-
-            </LinearLayout>
+            <ImageView
+                style="@style/GalleryImageStyle"
+                android:contentDescription="@string/gallery_image"
+                app:srcCompat="@drawable/strange_bromley" />
 
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
             style="@style/GalleryCardViewStyle"
-            app:cardElevation="4dp"
-            app:cardCornerRadius="4dp">
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp">
 
-            <LinearLayout
-                style="@style/GalleryLinearLayoutStyle">
+            <ImageView
+                style="@style/GalleryImageStyle"
+                android:contentDescription="@string/gallery_image"
+                app:srcCompat="@drawable/bowie_01" />
+        </android.support.v7.widget.CardView>
 
-                <ImageView
-                    style="@style/GalleryImageStyle"
-                    app:srcCompat="@drawable/bowie_01" />
+        <android.support.v7.widget.CardView
+            style="@style/GalleryCardViewStyle"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp">
 
-            </LinearLayout>
+            <ImageView
+                style="@style/GalleryImageStyle"
+                app:srcCompat="@drawable/darwin_mural" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            style="@style/GalleryCardViewStyle"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp">
+
+            <ImageView
+                style="@style/GalleryImageStyle"
+                android:contentDescription="@string/gallery_image"
+                app:srcCompat="@drawable/bowie_02" />
 
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
             style="@style/GalleryCardViewStyle"
-            app:cardElevation="4dp"
-            app:cardCornerRadius="4dp">
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp">
 
-            <LinearLayout
-                style="@style/GalleryLinearLayoutStyle">
-
-                <ImageView
-                    style="@style/GalleryImageStyle"
-                    app:srcCompat="@drawable/darwin_mural" />
-
-            </LinearLayout>
+            <ImageView
+                style="@style/GalleryImageStyle"
+                android:contentDescription="@string/gallery_image"
+                app:srcCompat="@drawable/famous_writers" />
 
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
             style="@style/GalleryCardViewStyle"
-            app:cardElevation="4dp"
-            app:cardCornerRadius="4dp">
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp">
 
-            <LinearLayout
-                style="@style/GalleryLinearLayoutStyle">
-
-                <ImageView
-                    style="@style/GalleryImageStyle"
-                    app:srcCompat="@drawable/bowie_02" />
-
-            </LinearLayout>
+            <ImageView
+                style="@style/GalleryImageStyle"
+                android:contentDescription="@string/gallery_image"
+                app:srcCompat="@drawable/bowie_03" />
 
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
             style="@style/GalleryCardViewStyle"
-            app:cardElevation="4dp"
-            app:cardCornerRadius="4dp">
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp">
 
-            <LinearLayout
-                style="@style/GalleryLinearLayoutStyle">
-
-                <ImageView
-                    style="@style/GalleryImageStyle"
-                    app:srcCompat="@drawable/famous_writers" />
-
-            </LinearLayout>
+            <ImageView
+                style="@style/GalleryImageStyle"
+                android:contentDescription="@string/gallery_image"
+                app:srcCompat="@drawable/flower_show" />
 
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
             style="@style/GalleryCardViewStyle"
-            app:cardElevation="4dp"
-            app:cardCornerRadius="4dp">
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp">
 
-            <LinearLayout
-                style="@style/GalleryLinearLayoutStyle">
-
-                <ImageView
-                    style="@style/GalleryImageStyle"
-                    app:srcCompat="@drawable/bowie_03" />
-
-            </LinearLayout>
+            <ImageView
+                style="@style/GalleryImageStyle"
+                android:contentDescription="@string/gallery_image"
+                app:srcCompat="@drawable/bowie_04" />
 
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
             style="@style/GalleryCardViewStyle"
-            app:cardElevation="4dp"
-            app:cardCornerRadius="4dp">
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp">
 
-            <LinearLayout
-                style="@style/GalleryLinearLayoutStyle">
-
-                <ImageView
-                    style="@style/GalleryImageStyle"
-                    app:srcCompat="@drawable/flower_show" />
-
-            </LinearLayout>
+            <ImageView
+                style="@style/GalleryImageStyle"
+                android:contentDescription="@string/gallery_image"
+                app:srcCompat="@drawable/evolution_tree" />
 
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
             style="@style/GalleryCardViewStyle"
-            app:cardElevation="4dp"
-            app:cardCornerRadius="4dp">
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp">
 
-            <LinearLayout
-                style="@style/GalleryLinearLayoutStyle">
-
-                <ImageView
-                    style="@style/GalleryImageStyle"
-                    app:srcCompat="@drawable/bowie_04" />
-
-            </LinearLayout>
+            <ImageView
+                style="@style/GalleryImageStyle"
+                android:contentDescription="@string/gallery_image"
+                app:srcCompat="@drawable/cafe" />
 
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
             style="@style/GalleryCardViewStyle"
-            app:cardElevation="4dp"
-            app:cardCornerRadius="4dp">
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp">
 
-            <LinearLayout
-                style="@style/GalleryLinearLayoutStyle">
-
-                <ImageView
-                    style="@style/GalleryImageStyle"
-                    app:srcCompat="@drawable/evolution_tree" />
-
-            </LinearLayout>
-
-        </android.support.v7.widget.CardView>
-
-        <android.support.v7.widget.CardView
-            style="@style/GalleryCardViewStyle"
-            app:cardElevation="4dp"
-            app:cardCornerRadius="4dp">
-
-            <LinearLayout
-                style="@style/GalleryLinearLayoutStyle">
-
-                <ImageView
-                    style="@style/GalleryImageStyle"
-                    app:srcCompat="@drawable/cafe" />
-
-            </LinearLayout>
-
-        </android.support.v7.widget.CardView>
-
-        <android.support.v7.widget.CardView
-            style="@style/GalleryCardViewStyle"
-            app:cardElevation="4dp"
-            app:cardCornerRadius="4dp">
-
-            <LinearLayout
-                style="@style/GalleryLinearLayoutStyle">
-
-                <ImageView
-                    style="@style/GalleryImageStyle"
-                    app:srcCompat="@drawable/little_explorers" />
-
-            </LinearLayout>
+            <ImageView
+                style="@style/GalleryImageStyle"
+                android:contentDescription="@string/gallery_image"
+                app:srcCompat="@drawable/little_explorers" />
 
         </android.support.v7.widget.CardView>
 

@@ -11,6 +11,7 @@
 
         <ImageView
             android:id="@+id/image"
+            android:contentDescription="@string/list_image"
             style="@style/ListImageStyle" />
 
         <LinearLayout

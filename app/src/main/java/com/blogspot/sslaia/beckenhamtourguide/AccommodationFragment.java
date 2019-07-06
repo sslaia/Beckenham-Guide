@@ -7,11 +7,15 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.Html;
+import android.text.Spanned;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import java.util.ArrayList;
+
+import static android.support.v4.text.HtmlCompat.FROM_HTML_MODE_LEGACY;
 
 public class AccommodationFragment extends Fragment {
 
@@ -25,18 +29,8 @@ public class AccommodationFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.recycle_list, container, false);
 
-        String beckenhamPark = "Address: 10 Copers Cope Rd, Beckenham BR3 1NB\n" +
-                "Phone: 020 8663 9199\n" +
-                "\n" +
-                "Beckenham Park Hotel is set in the heart of Beckenham Town Centre on the glories " +
-                "tree lined historical copers cope road. The building has retained many of " +
-                "its characters since when it was originally built in late 18th century. " +
-                "Jones family has established this unique privately-owned hotel some 50 years ago. " +
-                "The hotel almost last one year has spent upgrading and reinstating its facilities " +
-                "to provide warm and welcoming family atmosphere for clients to relax and enjoy their stay.\n" +
-                "\n" +
-                "The current owners have spent a lot of money and a lot of hard work to provide " +
-                "you exquisite relaxing atmosphere and keeping this period buildings original features.";
+        String beckenhamPark = getString(R.string.beckenham_park);
+//        Spanned beckenhamPark = Html.fromHtml(beckenham_park);
 
         String bromleyCourt = "Address: Bromley Hill, Bromley BR1 4JD\n" +
                 "Phone: 020 8461 8600\n" +

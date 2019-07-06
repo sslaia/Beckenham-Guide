@@ -12,6 +12,7 @@
 
         <ImageView
             style="@style/ProfileImageStyle"
+            android:contentDescription="@string/profile_image"
             app:srcCompat="@drawable/profile_image" />
 
         <TextView

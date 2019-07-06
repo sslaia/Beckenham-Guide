@@ -12,6 +12,7 @@
 
         <ImageView
             style="@style/WelcomeImageStyle"
+            android:contentDescription="@string/welcome_image"
             app:srcCompat="@drawable/strange_bromley" />
 
         <TextView
