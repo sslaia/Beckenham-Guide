@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.Fragment;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -51,37 +52,35 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     // Define what happens if one of the items on the drawer is clicked
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+
+        Fragment fragment = new Fragment();
         // This part shows corresponding fragment to the one clicked on the drawer
         switch (menuItem.getItemId()) {
             case R.id.drawer_menu_welcome:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new WelcomeFragment()).addToBackStack(null).commit();
+                fragment = new WelcomeFragment();
                 break;
             case R.id.drawer_menu_celebrities:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new CelebritiesFragment()).addToBackStack(null).commit();
+                fragment = new CelebritiesFragment();
                 break;
             case R.id.drawer_menu_history:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new HistoryFragment()).addToBackStack(null).commit();
+                fragment = new HistoryFragment();
                 break;
             case R.id.drawer_menu_entertainment:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new EntertainmentFragment()).addToBackStack(null).commit();
+                fragment = new EntertainmentFragment();
                 break;
             case R.id.drawer_menu_restaurants:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new RestaurantFragment()).addToBackStack(null).commit();
+                fragment = new RestaurantFragment();
                 break;
             case R.id.drawer_menu_accommodation:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new AccommodationFragment()).addToBackStack(null).commit();
+                fragment = new AccommodationFragment();
                 break;
             case R.id.drawer_menu_gallery:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new GalleryFragment()).addToBackStack(null).commit();
+                fragment = new GalleryFragment();
                 break;
         }
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                fragment).addToBackStack(null).commit();
+
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
