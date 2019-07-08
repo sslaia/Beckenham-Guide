@@ -32,6 +32,8 @@ public class DetailsFragment extends Fragment {
             mPlace.setText(String.valueOf(bundle.getString("place")));
             mDescription.setText(String.valueOf(bundle.getString("description")));
             int bImage = bundle.getInt("image");
+//          Alternative way to get the same result using Integer class (it needs to be converted to String)
+//          int bImage = Integer.parseInt(bundle.get("image").toString());
             mImage.setImageResource(bImage);
         }
 
