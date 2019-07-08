@@ -25,19 +25,13 @@ public class EntertainmentFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.recycle_list, container, false);
 
-        String odeon = getString(R.string.odeon);
-        String the_spa = getString(R.string.the_spa);
-        String gambado = getString(R.string.gambado);
-        String picture_house = getString(R.string.picture_house);
-        String the_glades = getString(R.string.the_glades);
-
         // Create an ArrayList of famous entertainment entries
         final ArrayList<GuideData> guideData = new ArrayList<>();
-        guideData.add(new GuideData("Odeon", "Beckenham", odeon, getString(R.string.entertainment), R.drawable.screen_green));
-        guideData.add(new GuideData("The Spa", "Beckenham", the_spa, getString(R.string.entertainment), R.drawable.restaurants));
-        guideData.add(new GuideData("Gambado", "Beckenham", gambado, getString(R.string.entertainment), R.drawable.little_explorers));
-        guideData.add(new GuideData("Picture House", "Bromley", picture_house, getString(R.string.entertainment), R.drawable.entertainment));
-        guideData.add(new GuideData("The Glades Shopping Centre", "Bromley", the_glades, getString(R.string.entertainment), R.drawable.strange_bromley));
+        guideData.add(new GuideData(getString(R.string.odeon_name), getString(R.string.place_beckenham), getString(R.string.odeon_description), getString(R.string.category_entertainment), R.drawable.screen_green));
+        guideData.add(new GuideData(getString(R.string.the_spa_name), getString(R.string.place_beckenham), getString(R.string.the_spa_description), getString(R.string.category_entertainment), R.drawable.restaurants));
+        guideData.add(new GuideData(getString(R.string.gambado_name), getString(R.string.place_beckenham), getString(R.string.gambado_description), getString(R.string.category_entertainment), R.drawable.little_explorers));
+        guideData.add(new GuideData(getString(R.string.picture_house_name), getString(R.string.place_bromley), getString(R.string.picture_house_description), getString(R.string.category_entertainment), R.drawable.entertainment));
+        guideData.add(new GuideData(getString(R.string.the_glades_name), getString(R.string.place_bromley), getString(R.string.the_glades_description), getString(R.string.entertainment), R.drawable.strange_bromley));
 
         // Now push the list to the recyclerview
         mRecyclerView = rootView.findViewById(R.id.recyclerview);
@@ -63,10 +57,10 @@ public class EntertainmentFragment extends Fragment {
                 DetailsFragment detailsFragment = new DetailsFragment();
 
                 Bundle bundle = new Bundle();
-                bundle.putString("name", mName);
-                bundle.putString("place", mPlace);
-                bundle.putString("description", mDescription);
-                bundle.putInt("image", mImage);
+                bundle.putString(getString(R.string.name), mName);
+                bundle.putString(getString(R.string.place), mPlace);
+                bundle.putString(getString(R.string.description), mDescription);
+                bundle.putInt(getString(R.string.image), mImage);
                 detailsFragment.setArguments(bundle);
                 transaction.replace(R.id.fragment_container, detailsFragment);
                 transaction.addToBackStack(null).commit();

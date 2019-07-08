@@ -26,7 +26,7 @@ public class GuideAdapter extends RecyclerView.Adapter<GuideAdapter.GuideViewHol
 
     public static class GuideViewHolder extends RecyclerView.ViewHolder {
         // Variables for the views in list_item.xml
-        // mImageView for the image, mNameView for the name and mPlaceVidw for the place
+        // mImageView for the image, mNameView for the name and mPlaceView for the place
         public ImageView mImageView;
         public TextView mNameView;
         public TextView mPlaceView;

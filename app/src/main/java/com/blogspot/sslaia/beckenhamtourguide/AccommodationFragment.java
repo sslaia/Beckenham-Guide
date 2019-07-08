@@ -1,21 +1,14 @@
 package com.blogspot.sslaia.beckenhamtourguide;
 
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.text.Html;
-import android.text.Spanned;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import java.util.ArrayList;
-
-import static android.support.v4.text.HtmlCompat.FROM_HTML_MODE_LEGACY;
 
 public class AccommodationFragment extends Fragment {
 
@@ -23,21 +16,16 @@ public class AccommodationFragment extends Fragment {
     private RecyclerView mRecyclerView;
     private GuideAdapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
-    private ArrayList<GuideData> mGuideList;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.recycle_list, container, false);
 
-        String beckenham_park = getString(R.string.beckenham_park);
-        String bromley_court = getString(R.string.bromley_court);
-        String innkeepers = getString(R.string.innkeepers);
-
         // Create an ArrayList of celebrities
         final ArrayList<GuideData> guideData = new ArrayList<>();
-        guideData.add(new GuideData("Beckenham Park Hotel", "Beckenham", beckenham_park, getString(R.string.accommodation), R.drawable.accommodation));
-        guideData.add(new GuideData("Bromley Court Hotel", "Beckenham", bromley_court, getString(R.string.accommodation), R.drawable.hotel1));
-        guideData.add(new GuideData("Innkeeper's Lodge", "Beckenham", innkeepers, getString(R.string.accommodation), R.drawable.hotel2));
+        guideData.add(new GuideData(getString(R.string.beckenham_park_name), getString(R.string.place_beckenham), getString(R.string.beckenham_park_description), getString(R.string.category_accommodation), R.drawable.accommodation));
+        guideData.add(new GuideData(getString(R.string.bromley_court_name), getString(R.string.place_beckenham), getString(R.string.bromley_court_description), getString(R.string.category_accommodation), R.drawable.hotel1));
+        guideData.add(new GuideData(getString(R.string.innkeepers_lodge_name), getString(R.string.place_beckenham), getString(R.string.innkeepers_lodge_description), getString(R.string.category_accommodation), R.drawable.hotel2));
 
         // Now push the list to the recyclerview
         mRecyclerView = rootView.findViewById(R.id.recyclerview);
@@ -63,10 +51,10 @@ public class AccommodationFragment extends Fragment {
                 DetailsFragment detailsFragment = new DetailsFragment();
 
                 Bundle bundle = new Bundle();
-                bundle.putString("name", mName);
-                bundle.putString("place", mPlace);
-                bundle.putString("description", mDescription);
-                bundle.putInt("image", mImage);
+                bundle.putString(getString(R.string.name), mName);
+                bundle.putString(getString(R.string.place), mPlace);
+                bundle.putString(getString(R.string.description), mDescription);
+                bundle.putInt(getString(R.string.image), mImage);
                 detailsFragment.setArguments(bundle);
                 transaction.replace(R.id.fragment_container, detailsFragment);
                 transaction.addToBackStack(null).commit();

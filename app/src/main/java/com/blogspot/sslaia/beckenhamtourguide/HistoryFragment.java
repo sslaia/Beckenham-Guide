@@ -25,19 +25,13 @@ public class HistoryFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.recycle_list, container, false);
 
-        String bowie_bandstand = getString(R.string.bowie_bandstand);
-        String crofton_roman_villa = getString(R.string.crofton_roman_villa);
-        String biggin_hill_museum = getString(R.string.biggin_hill_museum);
-        String crystal_palace = getString(R.string.crystal_palace);
-        String st_georges = getString(R.string.st_georges);
-
         // Create an ArrayList of celebrities
         final ArrayList<GuideData> guideData = new ArrayList<>();
-        guideData.add(new GuideData("David Bowie Bandstand", "Beckenham", bowie_bandstand, getString(R.string.history), R.drawable.bowie_bandstand));
-        guideData.add(new GuideData("Crystal Palace", "Crystal Palace", crystal_palace, getString(R.string.history), R.drawable.crystal_palace));
-        guideData.add(new GuideData("St George's Church", "Beckenham", st_georges, getString(R.string.history), R.drawable.st_georges));
-        guideData.add(new GuideData("Crofton Roman Villa", "Orpington", crofton_roman_villa, getString(R.string.history), R.drawable.beckenham_coa));
-        guideData.add(new GuideData("Biggin Hill Memorial Museum", "Biggin Hill", biggin_hill_museum, getString(R.string.history), R.drawable.bowie_04));
+        guideData.add(new GuideData(getString(R.string.bowie_bandstand_name), getString(R.string.place_beckenham), getString(R.string.bowie_bandstand_description), getString(R.string.category_history), R.drawable.bowie_bandstand));
+        guideData.add(new GuideData(getString(R.string.crystal_palace_name), getString(R.string.place_crystal_palace), getString(R.string.crystal_palace_description), getString(R.string.category_history), R.drawable.crystal_palace));
+        guideData.add(new GuideData(getString(R.string.st_georges_name), getString(R.string.place_beckenham), getString(R.string.st_georges_description), getString(R.string.category_history), R.drawable.st_georges));
+        guideData.add(new GuideData(getString(R.string.crofton_villa_name), getString(R.string.place_orpington), getString(R.string.crofton_villa_description), getString(R.string.category_history), R.drawable.beckenham_coa));
+        guideData.add(new GuideData(getString(R.string.bigginhill_museum_name), getString(R.string.place_bigginhill), getString(R.string.bigginhill_museum_description), getString(R.string.category_history), R.drawable.bowie_04));
 
         // Now push the list to the recyclerview
         mRecyclerView = rootView.findViewById(R.id.recyclerview);
@@ -63,10 +57,10 @@ public class HistoryFragment extends Fragment {
                 DetailsFragment detailsFragment = new DetailsFragment();
 
                 Bundle bundle = new Bundle();
-                bundle.putString("name", mName);
-                bundle.putString("place", mPlace);
-                bundle.putString("description", mDescription);
-                bundle.putInt("image", mImage);
+                bundle.putString(getString(R.string.name), mName);
+                bundle.putString(getString(R.string.place), mPlace);
+                bundle.putString(getString(R.string.description), mDescription);
+                bundle.putInt(getString(R.string.image), mImage);
                 detailsFragment.setArguments(bundle);
                 transaction.replace(R.id.fragment_container, detailsFragment);
                 transaction.addToBackStack(null).commit();

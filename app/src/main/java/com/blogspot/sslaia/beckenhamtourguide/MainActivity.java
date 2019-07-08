@@ -122,9 +122,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 return true;
             case R.id.tbmenu_feedback:
                 Intent menuFeedback = new Intent(Intent.ACTION_SENDTO);
-                menuFeedback.setData(Uri.parse("mailto:laia.sirus@gmail.com"));
+                menuFeedback.setData(Uri.parse(getString(R.string.feedback_mailto)));
                 menuFeedback.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.feedback_subject));
-                menuFeedback.putExtra(Intent.EXTRA_TEXT, "Dear Sir");
+                menuFeedback.putExtra(Intent.EXTRA_TEXT, getString(R.string.feedback_text));
                 if (menuFeedback.resolveActivity(getPackageManager()) != null) {
                     startActivity(Intent.createChooser(menuFeedback, getString(R.string.share_this)));
                 }

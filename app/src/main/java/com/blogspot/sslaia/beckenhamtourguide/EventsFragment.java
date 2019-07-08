@@ -25,22 +25,15 @@ public class EventsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.recycle_list, container, false);
 
-        String screen_green = getString(R.string.screen_green);
-        String the_huskies = getString(R.string.the_huskies);
-        String music_in_garden = getString(R.string.music_in_garden);
-        String music_churchill = getString(R.string.music_churchill);
-        String bec_rec_rock = getString(R.string.bec_rec_rock);
-        String magic_musical = getString(R.string.magic_musical);
-
         // Create an ArrayList of celebrities
         final ArrayList<GuideData> guideData = new ArrayList<>();
 
-        guideData.add(new GuideData("Screen on the Green", "Beckenham", screen_green, getString(R.string.events), R.drawable.screen_green));
-        guideData.add(new GuideData("Bec Rec Rocks!", "Beckenham", bec_rec_rock, getString(R.string.events), R.drawable.bec_rocks));
-        guideData.add(new GuideData("Magic of the Musicals", "Bromley", magic_musical, getString(R.string.events), R.drawable.magic_musical));
-        guideData.add(new GuideData("Celebrate Summer at the Churchill Theatre", "Bromley", music_churchill, getString(R.string.events), R.drawable.beckenham));
-        guideData.add(new GuideData("Music in the Garden", "Biggin Hill", music_in_garden, getString(R.string.events), R.drawable.beckenham));
-        guideData.add(new GuideData("The Huskies", "Orpington", the_huskies, getString(R.string.events), R.drawable.beckenham));
+        guideData.add(new GuideData(getString(R.string.screen_green_name), getString(R.string.place_beckenham), getString(R.string.screen_green_description), getString(R.string.category_events), R.drawable.screen_green));
+        guideData.add(new GuideData(getString(R.string.bec_rec_rock_name),getString(R.string.place_beckenham), getString(R.string.bec_rec_rock_description), getString(R.string.category_events), R.drawable.bec_rocks));
+        guideData.add(new GuideData(getString(R.string.magic_musical_name), getString(R.string.place_bromley), getString(R.string.magic_musical_description), getString(R.string.category_events), R.drawable.magic_musical));
+        guideData.add(new GuideData(getString(R.string.music_churchill_name), getString(R.string.place_bromley), getString(R.string.music_churchill_description), getString(R.string.category_events), R.drawable.beckenham));
+        guideData.add(new GuideData(getString(R.string.music_in_garden_name), getString(R.string.place_bigginhill), getString(R.string.music_in_garden_description), getString(R.string.category_events), R.drawable.beckenham));
+        guideData.add(new GuideData(getString(R.string.the_huskies_name), getString(R.string.place_orpington), getString(R.string.the_huskies_description), getString(R.string.category_events), R.drawable.beckenham));
 
         // Now push the list to the recyclerview
         mRecyclerView = rootView.findViewById(R.id.recyclerview);
@@ -66,10 +59,10 @@ public class EventsFragment extends Fragment {
                 DetailsFragment detailsFragment = new DetailsFragment();
 
                 Bundle bundle = new Bundle();
-                bundle.putString("name", mName);
-                bundle.putString("place", mPlace);
-                bundle.putString("description", mDescription);
-                bundle.putInt("image", mImage);
+                bundle.putString(getString(R.string.name), mName);
+                bundle.putString(getString(R.string.place), mPlace);
+                bundle.putString(getString(R.string.description), mDescription);
+                bundle.putInt(getString(R.string.image), mImage);
                 detailsFragment.setArguments(bundle);
                 transaction.replace(R.id.fragment_container, detailsFragment);
                 transaction.addToBackStack(null).commit();

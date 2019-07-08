@@ -22,17 +22,12 @@ public class CelebritiesFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.recycle_list, container, false);
 
-        String darwin = getString(R.string.darwin);
-        String bowie = getString(R.string.bowie);
-        String blyton = getString(R.string.blyton);
-        String wells = getString(R.string.wells);
-
         // Create an ArrayList of celebrities
         final ArrayList<GuideData> guideData = new ArrayList<>();
-        guideData.add(new GuideData("Charles Darwin", "Down House", darwin, getString(R.string.celebrities), R.drawable.charles_darwin));
-        guideData.add(new GuideData("David Bowie", "Bromley", bowie, getString(R.string.celebrities), R.drawable.david_bowie));
-        guideData.add(new GuideData("Enid Blyton", "Shortlands", blyton, getString(R.string.celebrities), R.drawable.enid_blyton));
-        guideData.add(new GuideData("H. G. Wells", "Bromley", wells, getString(R.string.celebrities), R.drawable.h_g_wells));
+        guideData.add(new GuideData(getString(R.string.darwin_name), getString(R.string.place_downhouse), getString(R.string.darwin_description), getString(R.string.category_celebrities), R.drawable.charles_darwin));
+        guideData.add(new GuideData(getString(R.string.bowie_name), getString(R.string.place_bromley), getString(R.string.bowie_description), getString(R.string.category_celebrities), R.drawable.david_bowie));
+        guideData.add(new GuideData(getString(R.string.blyton_name), getString(R.string.place_shortlands), getString(R.string.blyton_description), getString(R.string.category_celebrities), R.drawable.enid_blyton));
+        guideData.add(new GuideData(getString(R.string.wells_name), getString(R.string.place_bromley), getString(R.string.wells_description), getString(R.string.category_celebrities), R.drawable.h_g_wells));
 
         // Now push the list to the recyclerview
         mRecyclerView = rootView.findViewById(R.id.recyclerview);
@@ -58,10 +53,10 @@ public class CelebritiesFragment extends Fragment {
                 DetailsFragment detailsFragment = new DetailsFragment();
 
                 Bundle bundle = new Bundle();
-                bundle.putString("name", mName);
-                bundle.putString("place", mPlace);
-                bundle.putString("description", mDescription);
-                bundle.putInt("image", mImage);
+                bundle.putString(getString(R.string.name), mName);
+                bundle.putString(getString(R.string.place), mPlace);
+                bundle.putString(getString(R.string.description), mDescription);
+                bundle.putInt(getString(R.string.image), mImage);
                 detailsFragment.setArguments(bundle);
                 transaction.replace(R.id.fragment_container, detailsFragment);
                 transaction.addToBackStack(null).commit();

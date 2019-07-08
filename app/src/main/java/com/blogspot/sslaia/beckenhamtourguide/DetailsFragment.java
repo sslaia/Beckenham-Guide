@@ -28,10 +28,10 @@ public class DetailsFragment extends Fragment {
         // Extract data from the sending fragment and set the corresponding Views above
         Bundle bundle = getArguments();
         if (bundle != null) {
-            mName.setText(String.valueOf(bundle.getString("name")));
-            mPlace.setText(String.valueOf(bundle.getString("place")));
-            mDescription.setText(String.valueOf(bundle.getString("description")));
-            int bImage = bundle.getInt("image");
+            mName.setText(String.valueOf(bundle.getString(getString(R.string.name))));
+            mPlace.setText(String.valueOf(bundle.getString(getString(R.string.place))));
+            mDescription.setText(String.valueOf(bundle.getString(getString(R.string.description))));
+            int bImage = bundle.getInt(getString(R.string.image));
 //          Alternative way to get the same result using Integer class (it needs to be converted to String)
 //          int bImage = Integer.parseInt(bundle.get("image").toString());
             mImage.setImageResource(bImage);
