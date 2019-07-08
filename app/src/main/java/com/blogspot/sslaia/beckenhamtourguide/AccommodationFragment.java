@@ -35,9 +35,9 @@ public class AccommodationFragment extends Fragment {
 
         // Create an ArrayList of celebrities
         final ArrayList<GuideData> guideData = new ArrayList<>();
-        guideData.add(new GuideData("Beckenham Park Hotel", "Beckenham", beckenham_park, "Accommodation", R.drawable.accommodation));
-        guideData.add(new GuideData("Bromley Court Hotel", "Beckenham", bromley_court, "Accommodation", R.drawable.hotel1));
-        guideData.add(new GuideData("Innkeeper's Lodge", "Beckenham", innkeepers, "Accommodation", R.drawable.hotel2));
+        guideData.add(new GuideData("Beckenham Park Hotel", "Beckenham", beckenham_park, getString(R.string.accommodation), R.drawable.accommodation));
+        guideData.add(new GuideData("Bromley Court Hotel", "Beckenham", bromley_court, getString(R.string.accommodation), R.drawable.hotel1));
+        guideData.add(new GuideData("Innkeeper's Lodge", "Beckenham", innkeepers, getString(R.string.accommodation), R.drawable.hotel2));
 
         // Now push the list to the recyclerview
         mRecyclerView = rootView.findViewById(R.id.recyclerview);

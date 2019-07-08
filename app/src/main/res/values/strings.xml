@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Beckenham Tour Guide</string>
+    <string name="app_tag_line">Your guide in and around Beckenham</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Beckenham Tour Guide</string>
@@ -19,6 +20,19 @@
     <string name="menu_entertainment">Entertainment</string>
     <string name="menu_transport">Transport</string>
     <string name="menu_restaurant">Restaurants and Cafes</string>
+
+    <string name="share_this">Share this text</string>
+    <string name="feedback_subject">My feedback to Beckenham Tour Guide</string>
+    <string name="feedback_text">Dear Sir</string>
+
+
+    <string name="accommodation">Accommodation</string>
+    <string name="celebrities">Famous residents</string>
+    <string name="entertainment">Entertainment</string>
+    <string name="events">Events</string>
+    <string name="gallery">Gallery</string>
+    <string name="history">Historical sites</string>
+    <string name="restaurants">Restaurants and cafes</string>
 
     <string name="name">Name</string>
     <string name="place">Place</string>

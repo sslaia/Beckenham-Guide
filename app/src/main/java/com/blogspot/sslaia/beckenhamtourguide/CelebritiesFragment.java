@@ -29,10 +29,10 @@ public class CelebritiesFragment extends Fragment {
 
         // Create an ArrayList of celebrities
         final ArrayList<GuideData> guideData = new ArrayList<>();
-        guideData.add(new GuideData("Charles Darwin", "Down House", darwin, "Famous residents", R.drawable.charles_darwin));
-        guideData.add(new GuideData("David Bowie", "Bromley", bowie, "Famous residents", R.drawable.david_bowie));
-        guideData.add(new GuideData("Enid Blyton", "Shortlands", blyton, "Famous residents", R.drawable.enid_blyton));
-        guideData.add(new GuideData("H. G. Wells", "Bromley", wells, "Famous residents", R.drawable.h_g_wells));
+        guideData.add(new GuideData("Charles Darwin", "Down House", darwin, getString(R.string.celebrities), R.drawable.charles_darwin));
+        guideData.add(new GuideData("David Bowie", "Bromley", bowie, getString(R.string.celebrities), R.drawable.david_bowie));
+        guideData.add(new GuideData("Enid Blyton", "Shortlands", blyton, getString(R.string.celebrities), R.drawable.enid_blyton));
+        guideData.add(new GuideData("H. G. Wells", "Bromley", wells, getString(R.string.celebrities), R.drawable.h_g_wells));
 
         // Now push the list to the recyclerview
         mRecyclerView = rootView.findViewById(R.id.recyclerview);

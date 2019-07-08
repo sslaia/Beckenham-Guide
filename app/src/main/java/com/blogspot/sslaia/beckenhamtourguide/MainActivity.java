@@ -112,23 +112,21 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                         new EventsFragment()).addToBackStack(null).commit();
                 return true;
             case R.id.tbmenu_share:
-                Toast.makeText(this, "Share is selected", Toast.LENGTH_SHORT).show();
                 Intent menuShare = new Intent(Intent.ACTION_SEND);
                 menuShare.setType("text/plain");
-                menuShare.putExtra(Intent.EXTRA_SUBJECT, "Beckenham Tour Guide");
-                menuShare.putExtra(Intent.EXTRA_TEXT, "Your guide in and around Beckenham");
+                menuShare.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.app_name));
+                menuShare.putExtra(Intent.EXTRA_TEXT, getString(R.string.app_tag_line));
                 if (menuShare.resolveActivity(getPackageManager()) != null) {
-                    startActivity(Intent.createChooser(menuShare, "Share this text"));
+                    startActivity(Intent.createChooser(menuShare, getString(R.string.share_this)));
                 }
                 return true;
             case R.id.tbmenu_feedback:
-                Toast.makeText(this, "Feedback is selected", Toast.LENGTH_SHORT).show();
                 Intent menuFeedback = new Intent(Intent.ACTION_SENDTO);
                 menuFeedback.setData(Uri.parse("mailto:laia.sirus@gmail.com"));
-                menuFeedback.putExtra(Intent.EXTRA_SUBJECT, "My Feedback to Beckenham Tour Guide");
+                menuFeedback.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.feedback_subject));
                 menuFeedback.putExtra(Intent.EXTRA_TEXT, "Dear Sir");
                 if (menuFeedback.resolveActivity(getPackageManager()) != null) {
-                    startActivity(Intent.createChooser(menuFeedback, "Share this content"));
+                    startActivity(Intent.createChooser(menuFeedback, getString(R.string.share_this)));
                 }
                 return true;
             case R.id.tbmenu_about:

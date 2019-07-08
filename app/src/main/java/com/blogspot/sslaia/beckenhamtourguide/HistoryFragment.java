@@ -33,11 +33,11 @@ public class HistoryFragment extends Fragment {
 
         // Create an ArrayList of celebrities
         final ArrayList<GuideData> guideData = new ArrayList<>();
-        guideData.add(new GuideData("David Bowie Bandstand", "Beckenham", bowie_bandstand, "Historical sites", R.drawable.bowie_bandstand));
-        guideData.add(new GuideData("Crystal Palace", "Crystal Palace", crystal_palace, "Historical sites", R.drawable.crystal_palace));
-        guideData.add(new GuideData("St George's Church", "Beckenham", st_georges, "Historical sites", R.drawable.st_georges));
-        guideData.add(new GuideData("Crofton Roman Villa", "Orpington", crofton_roman_villa, "Historical sites", R.drawable.beckenham_coa));
-        guideData.add(new GuideData("Biggin Hill Memorial Museum", "Biggin Hill", biggin_hill_museum, "Historical sites", R.drawable.bowie_04));
+        guideData.add(new GuideData("David Bowie Bandstand", "Beckenham", bowie_bandstand, getString(R.string.history), R.drawable.bowie_bandstand));
+        guideData.add(new GuideData("Crystal Palace", "Crystal Palace", crystal_palace, getString(R.string.history), R.drawable.crystal_palace));
+        guideData.add(new GuideData("St George's Church", "Beckenham", st_georges, getString(R.string.history), R.drawable.st_georges));
+        guideData.add(new GuideData("Crofton Roman Villa", "Orpington", crofton_roman_villa, getString(R.string.history), R.drawable.beckenham_coa));
+        guideData.add(new GuideData("Biggin Hill Memorial Museum", "Biggin Hill", biggin_hill_museum, getString(R.string.history), R.drawable.bowie_04));
 
         // Now push the list to the recyclerview
         mRecyclerView = rootView.findViewById(R.id.recyclerview);

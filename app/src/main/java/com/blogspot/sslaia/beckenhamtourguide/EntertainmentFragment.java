@@ -33,11 +33,11 @@ public class EntertainmentFragment extends Fragment {
 
         // Create an ArrayList of famous entertainment entries
         final ArrayList<GuideData> guideData = new ArrayList<>();
-        guideData.add(new GuideData("Odeon", "Beckenham", odeon, "Entertainment", R.drawable.screen_green));
-        guideData.add(new GuideData("The Spa", "Beckenham", the_spa, "Entertainment", R.drawable.restaurants));
-        guideData.add(new GuideData("Gambado", "Beckenham", gambado, "Entertainment", R.drawable.little_explorers));
-        guideData.add(new GuideData("Picture House", "Bromley", picture_house, "Entertainment", R.drawable.entertainment));
-        guideData.add(new GuideData("The Glades Shopping Centre", "Bromley", the_glades, "Entertainment", R.drawable.strange_bromley));
+        guideData.add(new GuideData("Odeon", "Beckenham", odeon, getString(R.string.entertainment), R.drawable.screen_green));
+        guideData.add(new GuideData("The Spa", "Beckenham", the_spa, getString(R.string.entertainment), R.drawable.restaurants));
+        guideData.add(new GuideData("Gambado", "Beckenham", gambado, getString(R.string.entertainment), R.drawable.little_explorers));
+        guideData.add(new GuideData("Picture House", "Bromley", picture_house, getString(R.string.entertainment), R.drawable.entertainment));
+        guideData.add(new GuideData("The Glades Shopping Centre", "Bromley", the_glades, getString(R.string.entertainment), R.drawable.strange_bromley));
 
         // Now push the list to the recyclerview
         mRecyclerView = rootView.findViewById(R.id.recyclerview);

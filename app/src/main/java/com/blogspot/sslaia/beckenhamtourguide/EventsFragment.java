@@ -35,12 +35,12 @@ public class EventsFragment extends Fragment {
         // Create an ArrayList of celebrities
         final ArrayList<GuideData> guideData = new ArrayList<>();
 
-        guideData.add(new GuideData("Screen on the Green", "Beckenham", screen_green, "Events", R.drawable.screen_green));
-        guideData.add(new GuideData("Bec Rec Rocks!", "Beckenham", bec_rec_rock, "Events", R.drawable.bec_rocks));
-        guideData.add(new GuideData("Magic of the Musicals", "Bromley", magic_musical, "Events", R.drawable.magic_musical));
-        guideData.add(new GuideData("Celebrate Summer at the Churchill Theatre", "Bromley", music_churchill, "Events", R.drawable.beckenham));
-        guideData.add(new GuideData("Music in the Garden", "Biggin Hill", music_in_garden, "Events", R.drawable.beckenham));
-        guideData.add(new GuideData("The Huskies", "Orpington", the_huskies, "Events", R.drawable.beckenham));
+        guideData.add(new GuideData("Screen on the Green", "Beckenham", screen_green, getString(R.string.events), R.drawable.screen_green));
+        guideData.add(new GuideData("Bec Rec Rocks!", "Beckenham", bec_rec_rock, getString(R.string.events), R.drawable.bec_rocks));
+        guideData.add(new GuideData("Magic of the Musicals", "Bromley", magic_musical, getString(R.string.events), R.drawable.magic_musical));
+        guideData.add(new GuideData("Celebrate Summer at the Churchill Theatre", "Bromley", music_churchill, getString(R.string.events), R.drawable.beckenham));
+        guideData.add(new GuideData("Music in the Garden", "Biggin Hill", music_in_garden, getString(R.string.events), R.drawable.beckenham));
+        guideData.add(new GuideData("The Huskies", "Orpington", the_huskies, getString(R.string.events), R.drawable.beckenham));
 
         // Now push the list to the recyclerview
         mRecyclerView = rootView.findViewById(R.id.recyclerview);
